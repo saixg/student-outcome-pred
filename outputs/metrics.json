@@ -1,0 +1,191 @@
+{
+  "metadata": {
+    "dataset": "Predict Students' Dropout and Academic Success (UCI ID 697)",
+    "random_state": 42,
+    "test_size": 0.2,
+    "train_samples": 3539,
+    "test_samples": 885,
+    "target_classes": [
+      "Dropout",
+      "Enrolled",
+      "Graduate"
+    ],
+    "features": [
+      "Marital status",
+      "Application mode",
+      "Application order",
+      "Course",
+      "Daytime/evening attendance",
+      "Previous qualification",
+      "Previous qualification (grade)",
+      "Nacionality",
+      "Mother's qualification",
+      "Father's qualification",
+      "Mother's occupation",
+      "Father's occupation",
+      "Admission grade",
+      "Displaced",
+      "Educational special needs",
+      "Debtor",
+      "Tuition fees up to date",
+      "Gender",
+      "Scholarship holder",
+      "Age at enrollment",
+      "International",
+      "Curricular units 1st sem (credited)",
+      "Curricular units 1st sem (enrolled)",
+      "Curricular units 1st sem (evaluations)",
+      "Curricular units 1st sem (approved)",
+      "Curricular units 1st sem (grade)",
+      "Curricular units 1st sem (without evaluations)",
+      "Curricular units 2nd sem (credited)",
+      "Curricular units 2nd sem (enrolled)",
+      "Curricular units 2nd sem (evaluations)",
+      "Curricular units 2nd sem (approved)",
+      "Curricular units 2nd sem (grade)",
+      "Curricular units 2nd sem (without evaluations)",
+      "Unemployment rate",
+      "Inflation rate",
+      "GDP"
+    ]
+  },
+  "models": {
+    "Logistic Regression": {
+      "accuracy": 0.768361581920904,
+      "macro_f1": 0.682601247658837,
+      "weighted_f1": 0.7531276658422533,
+      "macro_precision": 0.7070053645836096,
+      "macro_recall": 0.6754261112173291,
+      "per_class": {
+        "Dropout": {
+          "precision": 0.7927272727272727,
+          "recall": 0.7676056338028169,
+          "f1-score": 0.7799642218246869,
+          "support": 284
+        },
+        "Enrolled": {
+          "precision": 0.5247524752475248,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.4076923076923077,
+          "support": 159
+        },
+        "Graduate": {
+          "precision": 0.8035363457760314,
+          "recall": 0.9253393665158371,
+          "f1-score": 0.8601472134595163,
+          "support": 442
+        }
+      },
+      "confusion_matrix": [
+        [
+          218,
+          29,
+          37
+        ],
+        [
+          43,
+          53,
+          63
+        ],
+        [
+          14,
+          19,
+          409
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 0.7322033898305085,
+      "macro_f1": 0.6529526279367254,
+      "weighted_f1": 0.7206540144651314,
+      "macro_precision": 0.6705858836602211,
+      "macro_recall": 0.6453343842903174,
+      "per_class": {
+        "Dropout": {
+          "precision": 0.7609561752988048,
+          "recall": 0.6725352112676056,
+          "f1-score": 0.7140186915887851,
+          "support": 284
+        },
+        "Enrolled": {
+          "precision": 0.47107438016528924,
+          "recall": 0.3584905660377358,
+          "f1-score": 0.40714285714285714,
+          "support": 159
+        },
+        "Graduate": {
+          "precision": 0.7797270955165692,
+          "recall": 0.9049773755656109,
+          "f1-score": 0.837696335078534,
+          "support": 442
+        }
+      },
+      "confusion_matrix": [
+        [
+          191,
+          43,
+          50
+        ],
+        [
+          39,
+          57,
+          63
+        ],
+        [
+          21,
+          21,
+          400
+        ]
+      ]
+    },
+    "Random Forest": {
+      "accuracy": 0.7638418079096045,
+      "macro_f1": 0.6846707420692852,
+      "weighted_f1": 0.7492845692512,
+      "macro_precision": 0.7149840883519009,
+      "macro_recall": 0.674338579166548,
+      "per_class": {
+        "Dropout": {
+          "precision": 0.8007518796992481,
+          "recall": 0.75,
+          "f1-score": 0.7745454545454545,
+          "support": 284
+        },
+        "Enrolled": {
+          "precision": 0.56,
+          "recall": 0.3522012578616352,
+          "f1-score": 0.43243243243243246,
+          "support": 159
+        },
+        "Graduate": {
+          "precision": 0.7842003853564548,
+          "recall": 0.920814479638009,
+          "f1-score": 0.8470343392299687,
+          "support": 442
+        }
+      },
+      "confusion_matrix": [
+        [
+          213,
+          22,
+          49
+        ],
+        [
+          40,
+          56,
+          63
+        ],
+        [
+          13,
+          22,
+          407
+        ]
+      ]
+    }
+  },
+  "best_model": {
+    "name": "Random Forest",
+    "selection_metric": "Macro F1",
+    "macro_f1": 0.6846707420692852
+  }
+}
