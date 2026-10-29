@@ -88,10 +88,6 @@ python -m uvicorn src.api:app --host 127.0.0.1 --port 8008
 
 Open your browser at **`http://localhost:8008`**.
 
-*(Optional) For Frontend Hot-Reload Development:*
-```powershell
-# In terminal 1 (Backend API)
-python -m uvicorn src.api:app --host 127.0.0.1 --port 8008 --reload
 
 # In terminal 2 (Vite React Dev Server)
 cd frontend
