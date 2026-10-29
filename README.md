@@ -86,14 +86,6 @@ cd ..
 python -m uvicorn src.api:app --host 127.0.0.1 --port 8008
 ```
 
-Open your browser at **`http://localhost:8008`**.
-
-
-# In terminal 2 (Vite React Dev Server)
-cd frontend
-npm run dev
-# Vite runs on http://localhost:3000 and proxies /api to port 8008
-```
 
 
 ```
