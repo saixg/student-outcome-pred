@@ -99,9 +99,7 @@ npm run dev
 # Vite runs on http://localhost:3000 and proxies /api to port 8008
 ```
 
-### 5. Run End-to-End Integration Tests
-```powershell
-python tests/test_api_and_app.py
+
 ```
 
 ---
